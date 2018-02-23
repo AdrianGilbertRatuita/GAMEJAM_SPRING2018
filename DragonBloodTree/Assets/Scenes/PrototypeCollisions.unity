@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 1437554}
   - component: {fileID: 1437553}
   m_Layer: 0
-  m_Name: CollectibleSample
+  m_Name: Orb
   m_TagString: Collectibles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,10 +241,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 196747387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 830fab62ce9f364449903ba880c5a4b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 911f88a300de96d4793f453da79644d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  CurrentOrbs: 0
+  CurrentHealth: 0
 --- !u!54 &196747389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -517,7 +519,6 @@ GameObject:
   - component: {fileID: 1036498873}
   - component: {fileID: 1036498872}
   - component: {fileID: 1036498870}
-  - component: {fileID: 1036498869}
   - component: {fileID: 1036498874}
   - component: {fileID: 1036498875}
   - component: {fileID: 1036498871}
@@ -528,17 +529,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1036498869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1036498868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1385a3800d1ae41ac8c1798bd2f36c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1036498870
 MeshRenderer:
   m_ObjectHideFlags: 0

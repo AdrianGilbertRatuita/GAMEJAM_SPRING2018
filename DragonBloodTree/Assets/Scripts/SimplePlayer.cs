@@ -5,9 +5,11 @@ using UnityEngine;
 public class SimplePlayer : MonoBehaviour
 {
 
+
     //
     public float Speed;
     public int CurrentOrbs;
+    public int CurrentHealth;
     //
     private float BaseSpeed;
 
