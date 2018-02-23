@@ -2,33 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionScript : MonoBehaviour
+public class SimplePlayer : MonoBehaviour
 {
 
     //
     public float Speed;
+    public int CurrentOrbs;
     //
     private float BaseSpeed;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
-
-        initialize();
-
-	}
-
-    void initialize()
-    {
-
         BaseSpeed = Speed;
-
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		
+
         if (!Input.anyKeyDown)
         {
 
@@ -56,11 +48,17 @@ public class CollisionScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+
         if (collision.gameObject.tag == "Collectibles")
         {
 
-            Destroy(collision.gameObject);
+            if (collision.gameObject.name == "Orb")
+            {
+
+                CurrentOrbs++;
+                Destroy(collision.gameObject);
+
+            }
 
         }
 
@@ -72,15 +70,6 @@ public class CollisionScript : MonoBehaviour
 
         }
 
-        if (collision.gameObject.tag == "Interactables")
-        {
-
-            // Conditions for Interaction
-
-
-        }
-
     }
-
 
 }
