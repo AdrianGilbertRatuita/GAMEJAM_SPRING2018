@@ -5,7 +5,10 @@ using UnityEngine;
 public class CollisionScript : MonoBehaviour
 {
 
-    public float Speed;
+    //
+    [SerializeField]
+    float Speed;
+    //
     private float BaseSpeed;
 
 	// Use this for initialization

@@ -5,15 +5,8 @@ using System.Text;
 
 public class Totem : IInteractable
 {
-    public bool Conditions()
+    public bool Conditions(Protagonist P)
     {
-
-        if (OrbCount == Goal)
-        {
-
-            return true;
-
-        }
 
         return false;
 

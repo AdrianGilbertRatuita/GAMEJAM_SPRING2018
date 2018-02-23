@@ -287,11 +287,9 @@
     <Compile Include="Assets\Scripts\Collectibles\ICollectible.cs" />
     <Compile Include="Assets\Scripts\CollisionScript.cs" />
     <Compile Include="Assets\Scripts\Interactables\IInteractable.cs" />
-    <Compile Include="Assets\Scripts\Interactables\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Interactables\TestInteractable.cs" />
     <Compile Include="Assets\Scripts\Interactables\Totem.cs" />
     <Compile Include="Assets\Scripts\Protagonist.cs" />
-    <Compile Include="Orbs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\GameDiagram.cd" />
